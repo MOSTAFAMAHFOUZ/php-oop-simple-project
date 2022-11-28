@@ -5,6 +5,11 @@
 
 class User{
 
+    private $db;
+    public function __construct()
+    {
+        $this->db = (new DB())->connect();
+    }
 
     public function index(){
         return require_once(ROOT_PATH.'views/users/view.php');
