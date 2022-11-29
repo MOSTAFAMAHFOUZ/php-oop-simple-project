@@ -18,6 +18,11 @@ class Product{
         return require_once(ROOT_PATH.'views/products/view.php');
     }
 
+
+    public function create(){
+        return require_once(ROOT_PATH.'views/products/create.php');
+    }
+
     public function store($request){
         // sanitization
         $name = $request->postInput('name');
@@ -38,10 +43,7 @@ class Product{
     }
 
 
-    public function create(){
-        return require_once(ROOT_PATH.'views/products/create.php');
-    }
-
+    
 
     public function edit(){
         return require_once(ROOT_PATH.'views/products/edit.php');

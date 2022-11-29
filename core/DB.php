@@ -25,11 +25,6 @@ class DB{
     }
 
 
-    public function connect(){
-    
-        
-    }
-
 
 
     public function insert($query){

@@ -19,6 +19,12 @@ class User{
         return require_once(ROOT_PATH.'views/users/view.php');
     }
 
+    
+    public function create(){
+        return require_once(ROOT_PATH.'views/users/create.php');
+    }
+
+    
     public function store($request){
         // sanitization
         $name = $request->postInput('name');
@@ -39,10 +45,6 @@ class User{
         }
     }
 
-
-    public function create(){
-        return require_once(ROOT_PATH.'views/users/create.php');
-    }
 
 
     public function edit(){
