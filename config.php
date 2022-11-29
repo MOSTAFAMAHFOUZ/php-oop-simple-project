@@ -1,5 +1,6 @@
 <?php 
-
+session_start();
+// error_reporting(E_ERROR|E_PARSE|E_NOTICE|E_USER_ERROR);
 
 // base url 
 define("URL","http://127.0.0.1/php/oop/simple-project-oop/");
@@ -15,3 +16,5 @@ require_once CORE_PATH."Session.php";
 require_once CORE_PATH."Request.php";
 require_once CORE_PATH."Validation.php";
 require_once CORE_PATH."Response.php";
+require_once CORE_PATH."Provider.php";
+

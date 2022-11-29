@@ -12,7 +12,7 @@ if(isset($_GET['page']) && $_GET['page']){
             $user->create();
             break;
         case "store":
-            $user->store();
+            $user->store(new Request());
             break;
         case "edit":
             $user->edit();

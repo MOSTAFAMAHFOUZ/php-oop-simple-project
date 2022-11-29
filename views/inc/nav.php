@@ -17,8 +17,9 @@
         </li>
        
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <form class="d-flex" role="search" action="<?php echo URL."products/index.php?page=search" ?>">
+        <input type="hidden" name="page" value="search">  
+        <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-danger bg-dark" type="submit">Search</button>
       </form>
     </div>
